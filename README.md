@@ -34,9 +34,9 @@ export DEVNET_HOST=<sandbox-hostname>
 export DEVNET_USER=<username>
 export DEVNET_PASS=<password>
 
-python restconf-get_interfaces.py
-python restconf-create_loopback.py
-python restconf-delete_loopback.py
+python restconf/get_interfaces.py
+python restconf/create_loopback.py
+python restconf/delete_loopback.py
 ```
 
 ## Part 2 — Netmiko (CLI automation)
