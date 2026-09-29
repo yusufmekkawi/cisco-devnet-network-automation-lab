@@ -38,6 +38,10 @@ python restconf/get_interfaces.py
 python restconf/create_loopback.py
 python restconf/delete_loopback.py
 ```
+**Python automation (requests library):** same GET → POST → GET → POST (409) → DELETE → GET
+sequence as above, run from the terminal instead of Postman.
+
+![RESTCONF Python sequence](Screenshots/09-restconf-python-full-sequence.png)
 
 ## Part 2 — Netmiko (CLI automation)
 Same idea, different transport: SSH + `send_config_set()`, scaled to 20 interfaces
