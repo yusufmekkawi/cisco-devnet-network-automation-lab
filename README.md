@@ -3,11 +3,7 @@
 Two ways to automate the same task: creating, verifying, and deleting loopback
 interfaces on a Cisco Catalyst 8000v, using the DevNet Always-On sandbox.
 
-## Diagram
-
-Postman/Python → RESTCONF (HTTPS/JSON) ↘
-                                          Catalyst 8000v (DevNet sandbox)
-Python + Netmiko → SSH (CLI)           ↗
+![Architecture](Screenshots/architecture-overview.png)
 
 ## Why two methods
 - **RESTCONF (API-based):** structured, machine-readable, good where an API exists.
@@ -38,9 +34,9 @@ export DEVNET_HOST=<sandbox-hostname>
 export DEVNET_USER=<username>
 export DEVNET_PASS=<password>
 
-python restconf/get_interfaces.py
-python restconf/create_loopback.py
-python restconf/delete_loopback.py
+python restconf-get_interfaces.py
+python restconf-create_loopback.py
+python restconf-delete_loopback.py
 ```
 
 ## Part 2 — Netmiko (CLI automation)
