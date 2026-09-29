@@ -1,7 +1,7 @@
 # Cisco DevNet Network Automation Lab
 
-Two ways to automate the same task — creating, verifying and deleting loopback
-interfaces on a Cisco Catalyst 8000v — using the DevNet Always-On sandbox.
+Two ways to automate the same task: creating, verifying, and deleting loopback
+interfaces on a Cisco Catalyst 8000v, using the DevNet Always-On sandbox.
 
 ## Why two methods
 - **RESTCONF (API-based):** structured, machine-readable, good where an API exists.
